@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Serif', serif;
+}
+div>div {
+    text-align: center;
+}
+[class*="topic"]{
+    height: 100%;
+    border: 1.5px solid rgb(230, 227, 227);
+    box-shadow: 1px 10px 10px -5px rgb(196, 195, 195);
+    margin: 30px;
+}
+h6 {
+    text-transform: uppercase;
+    color: #C9A96E;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 15px 0px 0px 0px;
+}
+.title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 0px 20px 0px 20px;
+}
+.date{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: #666666;
+    margin: 0px 0px 14px 0px;
+}
+.prep{
+    color: #949494;
+}
+.first {
+    background-image: url(images/topic1-tourism.svg);
+}
+.second {
+    background-image: url(images/topic2-sport.svg);
+}
+.third{
+    background-image: url(images/topic3-fashion.svg);
+}
+.fourth{
+    background-image: url(images/topic4-clothes.svg);
+}
+.fifth{
+    background-image: url(images/topic5-clothes.svg);
+}
+.sixth{
+    background-image: url(images/topic6-fashion.svg);
+}
+.seventh{
+    background-image: url(images/topic7-summer.svg);
+}
+.eighth{
+    background-image: url(images/topic8-autumn.svg);
+}
+.nineth{
+    background-image: url(images/topic9-clothes.svg);
+}
+.tenth{
+    background-image: url(images/topic10-summer.svg);
+}
+.eleventh{
+    background-image: url(images/topic11-summer.svg);
+}
+.img {
+    width: 100%;
+    height: 281px;
+}
+.text{
+    height: 131px;
+}
+
+.content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* tablet */
+@media(min-width:426px){
+    .topic {
+        float: left;
+        width: calc(50% - 30px);
+        margin: 10px;
+    }
+    .topic-7 {
+        float: left;
+        width: calc(100% - 35px);
+        margin: 10px;
+    }
+}
+@media(min-width:1024px){
+    .content{
+        padding-left: calc(15% - 30px);
+    }
+    .topic{
+        width: 370px;
+    }
+    .topic-7{
+       width: 760px; 
+    }
+    .title{
+        font-size: 20px;
+        padding: 0px 43px 0px 42px;
+    }
+    .date{
+        font-size: 12px;
+    }
+}  
+
+@media(min-width:1440px){
+    .content{
+        margin-left: 215px;
+    }
+}
+@media(min-width:2560px){
+    .content {
+            margin-left: 375px;
+            margin-right: 775px;
+        }
+}
